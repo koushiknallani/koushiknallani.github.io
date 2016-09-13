@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>K-Query</title>
+    <link type="image/png" rel="icon" href="favicon/favicon1.jpg" />
+    <script>
+        function goQuery() {
+            
+            var i = document.getElementById("query").value;
+            
+            if (i.length<1)
+            {
+                window.alert("Please Enter Query");
+                document.getElementById("query").focus();
+            }
+            else {
+                var str = i.trim().split(" ");
+                
+                var qry = str[0];
+
+                for (j = 1; j < str.length; j++) {
+                    qry = qry + "+" + str[j];
+                }
+                //window.alert(qry);
+                var url = "https://duckduckgo.com/?q=" + qry + "&t=h_&ia=about";
+                //window.alert(url);
+                window.location.href = url;
+            }
+            
+            
+        }
+    </script>
+    <style type="text/css">
+        .label1{
+            font-size: 30px;                 
+        }
+        .qrytxt{
+            font-size:40px;
+        }
+    </style>
+</head>
+<body>
+    
+        <label class="label1" >What's your Query?</label>
+    <br /><input class="qrytxt" type="text" id="query" name="query" autofocus />
+        <button onclick="goQuery()" >Submit</button>
+        
+</body>
+</html>
