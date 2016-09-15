@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Birthday Card</title>
+    <link href="static/img/favicon.jpg" rel="shortcut icon">
+    <link href="BirthdayStyle.css" type="text/css" rel="stylesheet" />
+    <script>
+        function changed() {
+            var i = document.getElementById("nametxt").value;
+            if (i.length < 1)
+                document.getElementById("name").textContent = "!";
+            else
+                document.getElementById("name").textContent = i+"!";
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="title">
+        <h1>Happy Birthday <label id="name">!</label></h1>
+    </div>
+    <div>
+        <input type="text" id="nametxt" placeholder="Your Name" oninput="changed()" />
+    </div>
+</body>
+</html>
