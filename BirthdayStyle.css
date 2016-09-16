@@ -1,8 +1,39 @@
 ﻿body
 {
     background-image:url("https://media.giphy.com/media/xTcnT2ZYSaCTdkTSmI/giphy.gif");
-
+    align-content:center;
 }
 .title{
-    font-family:"Arial";
+    font-family:MfYoungBeautiful;
+    align-content:center;
+    font-size:50px;
+}
+p.test {
+    width: 98%;    
+    border: 4px solid #000000;
+    word-wrap: break-word;
+    font-size:30px;
+    text-align: center;
+}
+
+
+@font-face {
+    font-family: MfYoungBeautiful;
+    src: url(fonts/MfYoungBeautiful.ttf);
+    
+}
+
+.rainbow {
+    width: 98%;
+    border: 4px solid #000000;
+    word-wrap: break-word;
+    font: normal normal bold 30px/normal "Bad Script", Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0);
+    text-align: center;
+    text-shadow: 1px 0 0 rgb(217,31,38) , 2px 0 0 rgb(226,91,14) , 3px 0 0 rgb(245,221,8) , 4px 0 0 rgb(5,148,68) , 5px 0 0 rgb(2,135,206) , 6px 0 0 rgb(4,77,145) , 7px 0 0 rgb(42,21,113) ;
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.rainbow:hover {
+  text-shadow: -1px 0 0 rgb(217,31,38) , -2px 0 0 rgb(226,91,14) , -3px 0 0 rgb(245,221,8) , -4px 0 0 rgb(5,148,68) , -5px 0 0 rgb(2,135,206) , -6px 0 0 rgb(4,77,145) , -7px 0 0 rgb(42,21,113) ;  
 }

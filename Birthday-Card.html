@@ -10,19 +10,20 @@
         function changed() {
             var i = document.getElementById("nametxt").value;
             if (i.length < 1)
-                document.getElementById("name").textContent = "!";
+                document.getElementById("name").textContent = "!*";
             else
-                document.getElementById("name").textContent = i+"!";
-            
+                document.getElementById("name").textContent = i+"!*";            
         }
     </script>
 </head>
 <body>
     <div class="title">
-        <h1>Happy Birthday <label id="name">!</label></h1>
+        <h1 style="text-align:center;">*Happy Birthday <label id="name">!*</label></h1>
     </div>
     <div>
         <input type="text" id="nametxt" placeholder="Your Name" oninput="changed()" />
     </div>
+    <p class="rainbow"> I hope you have a wonderful day and that the year ahead is filled with much love, many wonderful surprises and gives you lasting memories that you will cherish in all the days ahead. Happy Birthday.</p>
+    
 </body>
 </html>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Birthday Card</title>
+    <link href="static/img/favicon.jpg" rel="shortcut icon">
+    <link href="BirthdayStyle.css" type="text/css" rel="stylesheet" />
+    <script>
+        function changed() {
+            var i = document.getElementById("nametxt").value;
+            if (i.length < 1) {
+                window.alert("Enter Name")
+                return 0;
+            }
+            else
+                document.getElementById("name").textContent = i + "!*";
+
+            document.getElementById("d1").style.display = "none";
+            document.getElementById("d2").style.display = 'block';
+            //window.alert("hhfhg");
+            //document.getElementById("d1").style.display = "show";
+           
+        }
+        function d2hide() {
+            document.getElementById("d2").style.display = "none";
+            document.getElementById("d1").style.display = "show";
+        }
+    </script>
+</head>
+<body onload="d2hide()">
+    <div id="d1">        
+        <input  style="font-size:40px;" type="text" id="nametxt" placeholder="Your Name" autofocus/>
+        <button type="submit" onclick="changed()">Click Me</button>
+    </div>
+    <div id="d2">
+        <div class="title">
+            <h1 style="text-align:center;">*Happy Birthday <label id="name">!*</label></h1>
+        </div>
+        
+        <p class="rainbow"> I hope you have a wonderful day and that the year ahead is filled with much love, many wonderful surprises and gives you lasting memories that you will cherish in all the days ahead. Happy Birthday.</p>
+    </div>
+</body>
+</html>
