@@ -165,6 +165,7 @@
         message("It's not your turn yet. Hang on a sec!");
       }
     }
+
     function toggle(x,y) {
     if (my_turn) {
       if (piece_toggled)
@@ -189,9 +190,11 @@
       selected_c = coord(x,y);
       }
     }
+
     function draw(x,y,name) {
       document.images["space"+x+""+y].src = "./gr/"+name;
     }
+
     function integ(num) {
       if (num != null)
         return Math.round(num);
@@ -211,6 +214,7 @@
       arr1[arr1.length+i] = arr2[i];
       return arr1;
     }
+
     function legal_move(from,to) {
       if ((to.x < 0) || (to.y < 0) || (to.x > 7) || (to.y > 7)) return false;
       piece = board[from.x][from.y];
@@ -243,6 +247,7 @@
 
     return true;
     }
+
     function move(from,to) {
     my_turn = true;
     if (legal_move(from,to)) {
@@ -377,6 +382,7 @@
     safe_from = safe_to = null;
     return false;
     }
+
     function jump(i,j) {
     if (board[i][j] == -1.1) {
     if (legal_move(coord(i,j),coord(i+2,j+2))) {
@@ -401,6 +407,7 @@
     }
     return false;
     }
+
     function single(i,j) {
     if (board[i][j] == -1.1) {
     if (legal_move(coord(i,j),coord(i+1,j+1))) {

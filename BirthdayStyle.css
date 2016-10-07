@@ -22,10 +22,16 @@ p.test {
     src: url(fonts/MfYoungBeautiful.ttf);
     
 }
-
+div.d2c{
+    
+   
+}
 .rainbow {
-    width: 98%;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
     border: 4px solid #000000;
+    word-spacing: 20px;
     word-wrap: break-word;
     font: normal normal bold 30px/normal "Bad Script", Helvetica, sans-serif;
     color: rgba(0, 0, 0, 0);

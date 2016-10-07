@@ -1,0 +1,104 @@
+
+body
+{
+	text-align: center;
+    
+}
+h1{
+    color:#f4ee42;
+}
+
+table.grid
+{
+	background-color: FFCC99;
+	margin-left:auto;
+	margin-right:auto;
+}
+td
+{
+	height: 70px;
+	width: 70px;
+	border-radius: 10px;
+}
+
+td.redcell
+{
+	background-color: white;
+}
+
+td.blackcell
+{
+	background-color: black;
+}
+
+#checker-red
+{
+	margin-left:auto;
+	margin-right:auto;
+	display: circle;
+	height: 45px;
+	width: 45px;
+	background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #BFBFFF , #0000FF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #BFBFFF , #0000FF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #BFBFFF , #0000FF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #BFBFFF , #0000FF); /* Standard syntax */
+	
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    
+    
+}
+
+#king-red
+{
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+	height: 45px;
+	width: 45px;
+	background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, #9999CF , #191970); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #9999CF , #191970); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #9999CF , #191970); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #9999CF , #191970); /* Standard syntax */
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+#checker-white
+{
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+	height: 45px;
+	width: 45px;
+	background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #FFBFBF , #FF0000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #DFBFBF , #FF0000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #DFBFBF , #FF0000); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #DFBFBF , #FF0000); /* Standard syntax */
+	border-radius: 0px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+#king-white
+{
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+	height: 45px;
+	width: 45px;
+	background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #FFBFBF , #800000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #FFBFBF , #800000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #FFBFBF , #800000); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #FFBFBF , #800000); /* Standard syntax */
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
