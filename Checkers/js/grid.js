@@ -3,7 +3,7 @@ var w; //The Game grid window.
 
 
 var grid = [
-	/* Initial White checker positions */
+	/* Initial Red checker positions */
 	{x:1, y:0, occupied:"checker-white", king:false},
 	{x:3, y:0, occupied:"checker-white", king:false},
 	{x:5, y:0, occupied:"checker-white", king:false},
@@ -27,7 +27,7 @@ var grid = [
 	{x:5, y:4, occupied:"", king:false},
 	{x:7, y:4, occupied:"", king:false},
 
-	/* Initial Red checker positions */
+	/* Initial Blue checker positions */
 	{x:0, y:5, occupied:"checker-red", king:false},
 	{x:2, y:5, occupied:"checker-red", king:false},
 	{x:4, y:5, occupied:"checker-red", king:false},
