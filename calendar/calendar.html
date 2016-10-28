@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>calendar</title>
+    </head>
+    <body>
+<div class="nav">
+    <a class="pre" href="index.php?month=__pre_month__" onclick="$('#cal').load('index.php?month=__pre_month__&_r=' + Math.random()); return false;">__prev__</a>
+    <div class="head">__cal_caption__</div>
+    <a class="next" href="index.php?month=__next_month__" onclick="$('#cal').load('index.php?month=__next_month__&_r=' + Math.random()); return false;">__next__</a>
+</div>
+<table>
+    <tr class="days">
+        <th class="weekday">Sunday</th>
+        <th class="weekday">Monday</th>
+        <th class="weekday">Tuesday</th>
+        <th class="weekday">Wednesday</th>
+        <th class="weekday">Thurday</th>
+        <th class="weekday">Friday</th>
+        <th class="weekday">Saturday</th>
+    </tr>
+    __cal_rows__
+</table>
+    </body>
+</html>
+    

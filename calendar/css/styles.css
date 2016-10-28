@@ -1,0 +1,95 @@
+/* calendar styles */
+@font-face {
+    font-family: Crasns;
+    src: url(../Crasns.ttf);
+    
+}
+#cal {
+background-color:white;
+color: white;/*sun,mon headings*/
+font-size: 30px;
+margin: 50px auto;
+width: 100%;/*table width*/
+    opacity: 1;
+
+    
+}
+#cal .nav {
+background-color: gray;/* heading background*/
+color:cornsilk;/* main heading*/
+font-weight: bold;
+position: relative;/* for the arrows*/
+}
+#cal .nav .head {
+text-align: center;/*heading center*/
+}
+
+.days{
+    background-color:gray;
+    font-size: 100%;
+}
+
+#cal .nav .pre, #cal .nav .next {
+position: absolute;
+top: 0px;
+width: 34px;
+font-size:100%;
+}
+#cal .nav .pre {
+    direction:  ltr;
+/*left: 40px;*/
+text-decoration:none;
+color:cornsilk;
+}
+#cal .nav .next {
+right: 105px;
+/*direction: rtl;
+text-align:right;*/
+text-decoration: none;
+color:cornsilk;
+}
+#cal .nav .pre:hover, #cal .nav .next:hover {
+opacity: 0.7;
+}
+#cal table {
+border-collapse: collapse;
+font-size: 30px;
+table-layout: fixed;
+width: 100%;
+}
+#cal table th {
+font-weight: bold;
+text-align: center;
+border:none;
+
+
+}
+#cal table td a {
+background-color: none;/* table background*/
+border: none;/*0px solid #D8DCDF;*/
+color: black;/*numbers*/
+display: block;
+opacity: 0.3;
+padding: 0.2em;
+text-align: center;
+text-decoration: none;
+font-family:Crasns;
+}
+#cal table td a:hover {
+/*background-color: gray;*//* table backgroung while hover*/
+color: black;/* number colors while hover*/
+border: 2px solid black;
+border-radius: 5px;
+}
+#cal table td.current a {
+opacity: 1;
+}
+#cal table td.today a {
+background-color: blue;
+border: 1px solid black;
+color:white;/*present day*/
+opacity: 1;
+border-radius: 0px;
+font-weight: bold;
+outline-style: double;
+}
